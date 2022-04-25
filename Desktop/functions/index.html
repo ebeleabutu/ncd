@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js functions</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+
+
+
+    <section class="section-center">
+        <p id="record">Record Deleted</p>
+        <p id="details">Details Updated</p>
+        <p id="alert">patients details added successfully!!!</p>
+
+        <form class="input-form">
+
+            <div>
+                first-name: <input type="text" required id="first-name" />
+            </div><br>
+            <div>
+                last-name: <input type="text" required id="last-name">
+            </div><br>
+            <div>
+                email address: <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required id="email">
+            </div><br>
+            <div class="gender-form">
+                <label for="">Gender: </label>
+                <select required id="gender">
+                    <option value="">select for gender</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                </select>
+            </div><br>
+            <div class="travel form checkbox">
+                <input type="checkbox">recently came into nigeria within the last 14days?
+            </div><br>
+
+            <div class="submit form ">
+                <input type="submit" value="submit" id="submit">
+            </div>
+        </form>
+        <!--records-->
+
+
+
+        <table class="list" id="output-tab">
+            
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>email</th>
+                    <th>gender</th>
+                    <th>came to nigeria withen the last 14days</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            
+            <tbody class="table-body">
+
+            </tbody>
+        </table>
+
+
+    </section>
+
+    <script type="text/javascript" src="./file.js"></script>
+
+
+</body>
+
+</html>
